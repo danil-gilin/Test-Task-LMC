@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/criticsFragment"
+    android:id="@+id/navigate_critics">
+    <fragment
+        android:id="@+id/criticsFragment"
+        android:name="com.example.criticsandreviewes.presenter.critics.CriticsFragment"
+        tools:layout="@layout/fragment_critics"
+
+        android:label="CriticsFragment" >
+        <action
+            android:id="@+id/action_criticsFragment_to_criticInfoFragment"
+            app:destination="@id/criticInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/criticInfoFragment"
+        android:name="com.example.criticsandreviewes.presenter.criticInfo.CriticInfoFragment"
+        android:label="fragment_critic_info"
+        tools:layout="@layout/fragment_critic_info" />
+</navigation>
